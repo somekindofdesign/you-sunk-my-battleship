@@ -1,3 +1,13 @@
-# Your code goes here.
-# You can delete these comments, but do not change the name of this file
-# Write your code to expect a terminal of 80 characters wide and 24 rows high
+player_input = ''
+
+while True:
+    player_input = input("Do you want to play a game of battleships with me? Type yes or no: n\")
+
+    if player_input.lower() == "yes":
+        print("Great! I'll set up the boards...")
+        continue
+    elif player_input.lower() == "no":
+        print("Oh well. Mayber later!")
+        break
+    else:
+        print("Type yes or no, please!")
