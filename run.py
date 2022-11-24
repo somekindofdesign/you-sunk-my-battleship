@@ -1,5 +1,7 @@
 player_input = ''
-
+"""
+Intro to the game, asks the user if they wish to play
+"""
 while True:
     player_input = input("Do you want to play a game of battleships with me? Type yes or no: ")
 
