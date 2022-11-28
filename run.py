@@ -53,6 +53,7 @@ class Battleships:
     """
     Class to generate ships and handle players moves
     """
+
     def __init__(self, board):
         self.board = board
 
@@ -98,3 +99,12 @@ class Battleships:
                 if yaxis == "X":
                     sunk_ships += 1
         return sunk_ships
+
+
+def PlayBattleships():
+    """
+    Defines function for game play
+    """
+    game_board = BattleshipBoard([[" "] * 5 for i in range(5)])
+    moves_board = BattleshipBoard([[" "] * 5 for i in range(5)])
+    Battleships.generate_ships(game_board)
