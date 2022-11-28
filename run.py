@@ -101,7 +101,7 @@ class Battleships:
         return sunk_ships
 
 
-def PlayBattleships():
+def play_battleships():
     """
     Defines function for game play
     """
@@ -146,4 +146,4 @@ def PlayBattleships():
 
 # let's play Battleships!
 if __name__ == '__main__':
-    PlayBattleships()
+    play_battleships()
