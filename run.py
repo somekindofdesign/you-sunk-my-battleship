@@ -86,7 +86,7 @@ class Battleships:
                 y_yaxis = input("Try again: ").upper()
             return int(x_xaxis) - 1, BattleshipBoard.board_letters_by_numbers()[y_yaxis]
         except ValueError:
-            print("Sorry, I don't recognise what you entered - please try again.")
+            print("Sorry, I don't recognise that entry - please try again.")
         return self.player_move()
 
     def sunk_ships_score(self):
