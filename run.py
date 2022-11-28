@@ -40,12 +40,12 @@ class BattleshipBoard:
         """
         Defines function to layout the battleship board
         """
-        print("  a b c d e")
+        print("     a   b   c   d   e  ")
         xaxis_number = 1
         for xaxis in self.board:
 
             # uses % formatting placeholders to create the grid layout
-            print("%d¦%s¦" % (xaxis_number, "¦".join(xaxis)))
+            print(" %d ¦ %s ¦ " % (xaxis_number, " ¦ ".join(xaxis)))
             xaxis_number += 1
 
 
@@ -74,6 +74,7 @@ class Battleships:
         """
         Defines function to get and validate player moves on x and y axes
         """
+        print("            ")
         try:
             x_xaxis = input("What number do you want to try?: ")
             while x_xaxis not in '12345':
@@ -116,6 +117,7 @@ def play_battleships():
 
         # get next player move
         player_x_xaxis, player_y_yaxis = Battleships.player_move(object)
+        print("            ")
 
         # checks for repeat moves
         while moves_board.board[player_x_xaxis][player_y_yaxis] == "-" or moves_board.board[player_x_xaxis][player_y_yaxis] == "X":
@@ -137,6 +139,7 @@ def play_battleships():
         else:
             torpedoes -= 1
             print(f"There are {torpedoes} torpedoes left in your arsenal.")
+            print("            ")
 
         if torpedoes == 0:
             print("You ran out of torpedoes and lost the battle.")
