@@ -109,6 +109,11 @@ def PlayBattleships():
     moves_board = BattleshipBoard([[" "] * 5 for i in range(5)])
     Battleships.generate_ships(game_board)
 
+    # set number of torpedoes to play with
+    torpedoes = 8
+    while torpedoes > 0:
+        BattleshipBoard.generate_board(moves_board)
+
     # get next player move
     player_x_xaxis, player_y_yaxis = Battleships.player_move(object)
 
@@ -124,3 +129,16 @@ def PlayBattleships():
     else:
         print("You missed my battleships!")
         moves_board.board[player_x_xaxis][player_y_yaxis] = "-"
+
+    # checks if all ships have been hit or torpedoes ran out
+    if Battleships.sunk_ships_score(moves_board) == 5:
+        print("You sunk all my battleships!")
+        break
+    else:
+        torpedoes -= 1
+        print(f"There are {torpedoes} torpedoes left in your arsenal.")
+    
+    if torpedoes == 0:
+        print("You ran out of torpedoes before sinking all my battleships - you lost the battle.")
+        BattleshipBoard.generate_board(moves_board)
+        break
