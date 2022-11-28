@@ -108,3 +108,19 @@ def PlayBattleships():
     game_board = BattleshipBoard([[" "] * 5 for i in range(5)])
     moves_board = BattleshipBoard([[" "] * 5 for i in range(5)])
     Battleships.generate_ships(game_board)
+
+    # get next player move
+    player_x_xaxis, player_y_yaxis = Battleships.player_move(object)
+
+    # checks for repeat moves
+    while moves_board.board[player_x_xaxis][player_y_yaxis] == "-" or moves_board.board[player_x_xaxis][player_y_yaxis] == "X":
+        print("One of your torpedoes already landed here - try another move.")
+        player_x_xaxis, player_y_yaxis = Battleships.player_move(object)
+
+    # checks if torpedo hit a ship
+    if game_board.board[player_x_xaxis][player_y_yaxis] == "X":
+        print("You sunk my battleship!")
+        moves_board.board[player_x_xaxis][player_y_yaxis] = "X"
+    else:
+        print("You missed my battleships!")
+        moves_board.board[player_x_xaxis][player_y_yaxis] = "-"
