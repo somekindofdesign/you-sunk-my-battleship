@@ -139,7 +139,7 @@ def play_battleships():
             print(f"There are {torpedoes} torpedoes left in your arsenal.")
 
         if torpedoes == 0:
-            print("You ran out of torpedoes before sinking all my battleships - you lost the battle.")
+            print("You ran out of torpedoes and lost the battle.")
             BattleshipBoard.generate_board(moves_board)
             break
 
