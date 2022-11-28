@@ -74,7 +74,7 @@ class Battleships:
         """
         Defines function to get and validate player moves on x and y axes
         """
-        print("            ")
+        print("\n")
         try:
             x_xaxis = input("What number do you want to try?: ")
             while x_xaxis not in '12345':
@@ -117,7 +117,7 @@ def play_battleships():
 
         # get next player move
         player_x_xaxis, player_y_yaxis = Battleships.player_move(object)
-        print("            ")
+        print(" \n")
 
         # checks for repeat moves
         while moves_board.board[player_x_xaxis][player_y_yaxis] == "-" or moves_board.board[player_x_xaxis][player_y_yaxis] == "X":
@@ -126,23 +126,22 @@ def play_battleships():
 
         # checks if torpedo hit a ship
         if game_board.board[player_x_xaxis][player_y_yaxis] == "X":
-            print("You sunk my battleship!")
+            print("You sunk my battleship!\n")
             moves_board.board[player_x_xaxis][player_y_yaxis] = "X"
         else:
-            print("You missed my battleships!")
+            print("You missed my battleships!\n")
             moves_board.board[player_x_xaxis][player_y_yaxis] = "-"
 
         # checks if all ships have been hit or torpedoes ran out
         if Battleships.sunk_ships_score(moves_board) == 5:
-            print("You sunk all my battleships!")
+            print("You sunk all my battleships!\n")
             break
         else:
             torpedoes -= 1
-            print(f"There are {torpedoes} torpedoes left in your arsenal.")
-            print("            ")
+            print(f"There are {torpedoes} torpedoes left in your arsenal.\n")
 
         if torpedoes == 0:
-            print("You ran out of torpedoes and lost the battle.")
+            print("You ran out of torpedoes and lost the battle.\n")
             BattleshipBoard.generate_board(moves_board)
             break
 
