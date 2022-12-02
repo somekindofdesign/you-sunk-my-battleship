@@ -1,4 +1,13 @@
 import random
+import pyfiglet
+
+battle_cry = pyfiglet.figlet_format("Let's battle!", font="banner3-D")
+"""
+Defines ASCII text to create excitment for game play
+Blank print statement used instead of \n to avoid ASCII line height
+"""
+print("")
+print(battle_cry)
 
 """
 player_input = ''
