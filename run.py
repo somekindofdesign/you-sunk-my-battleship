@@ -1,18 +1,10 @@
 import random
 import pyfiglet
 
-battle_cry = pyfiglet.figlet_format("Let's battle!", font="banner3-D")
-"""
-Defines ASCII text to create excitment for game play
-Blank print statement used instead of \n to avoid ASCII line height
-"""
-print("")
-print(battle_cry)
 
-"""
-player_input = ''
+player_input = ""
 
-#Intro to the game, asks the user if they wish to play
+# Intro to the game, asks the user if they wish to play
 
 while True:
     player_input = input(
@@ -26,7 +18,11 @@ while True:
         break
     else:
         print("Type yes or no, please!")
-"""
+
+# Code used for this is sourced from https://www.geeksforgeeks.org/python-ascii-art-using-pyfiglet-module/
+battle_cry = pyfiglet.figlet_format("Let's battle!", font="banner3-D")
+print("")
+print(battle_cry)
 
 
 class BattleshipBoard:
@@ -156,5 +152,6 @@ def play_battleships():
 
 
 # let's play Battleships!
+# Code used for this is sourced from https://www.youtube.com/watch?v=alJH_c9t4zw
 if __name__ == '__main__':
     play_battleships()
