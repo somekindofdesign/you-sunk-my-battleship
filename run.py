@@ -1,3 +1,7 @@
+"""
+This is a battleship style game made using Python 3.0.
+"""
+
 import random
 import pyfiglet
 
@@ -19,7 +23,7 @@ while True:
     else:
         print("Type yes or no, please!")
 
-# Code used for this is sourced from https://www.geeksforgeeks.org/python-ascii-art-using-pyfiglet-module/
+# Source: https://www.geeksforgeeks.org/python-ascii-art-using-pyfiglet-module/
 battle_cry = pyfiglet.figlet_format("Let's battle!", font="banner3-D")
 print("")
 print(battle_cry)
@@ -27,15 +31,18 @@ print(battle_cry)
 
 class BattleshipBoard:
     """
-    Class to build grid and generate boards
+    Class to build grid and generate boards.
     """
 
     def __init__(self, board):
+        """
+        Initialises the class.
+        """
         self.board = board
 
     def board_letters_by_numbers():
         """
-        Defines function to reference letter and number grid
+        Defines function to reference letter and number grid.
         """
         letters_by_numbers = {"A": 0, "B": 1, "C": 2,
                               "D": 3, "E": 4, "F": 5, "G": 6, "H": 7}
@@ -43,7 +50,7 @@ class BattleshipBoard:
 
     def generate_board(self):
         """
-        Defines function to layout the battleship board
+        Defines function to layout the battleship board.
         """
         print("     a   b   c   d   e  ")
         xaxis_number = 1
@@ -56,7 +63,7 @@ class BattleshipBoard:
 
 class Battleships:
     """
-    Class to generate ships and handle players moves
+    Class to generate ships and handle players moves.
     """
 
     def __init__(self, board):
@@ -64,7 +71,7 @@ class Battleships:
 
     def generate_ships(self):
         """
-        Defines function to position ships randomly on the board
+        Defines function to position ships randomly on the board.
         """
         for i in range(4):
             self.x_xaxis, self.y_yaxis = random.randint(
@@ -77,7 +84,7 @@ class Battleships:
 
     def player_move(self):
         """
-        Defines function to get and validate player moves on x and y axes
+        Defines function to get and validate player moves on x and y axes.
         """
         print("\n")
         try:
@@ -90,14 +97,15 @@ class Battleships:
             while y_yaxis not in "ABCDE":
                 print("That's not a letter from A to E.")
                 y_yaxis = input("Try again: ").upper()
-            return int(x_xaxis) - 1, BattleshipBoard.board_letters_by_numbers()[y_yaxis]
+            return int(x_xaxis) - 1, BattleshipBoard.board_letters_by_numbers(
+            )[y_yaxis]
         except ValueError:
             print("Sorry, I don't recognise that entry - please try again.")
         return self.player_move()
 
     def sunk_ships_score(self):
         """
-        Define function to keep track of score after player inputs move
+        Define function to keep track of score after player inputs move.
         """
         sunk_ships = 0
         for xaxis in self.board:
@@ -109,7 +117,7 @@ class Battleships:
 
 def play_battleships():
     """
-    Defines function for game play
+    Defines function for game play.
     """
     game_board = BattleshipBoard([[" "] * 5 for i in range(5)])
     moves_board = BattleshipBoard([[" "] * 5 for i in range(5)])
@@ -152,6 +160,6 @@ def play_battleships():
 
 
 # let's play Battleships!
-# Code used for this is sourced from https://www.youtube.com/watch?v=alJH_c9t4zw
+# Source: https://www.youtube.com/watch?v=alJH_c9t4zw
 if __name__ == '__main__':
     play_battleships()

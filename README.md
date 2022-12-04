@@ -1,11 +1,15 @@
-# You Sunk My Battleship
+# Welcome to You Sunk My Battleship
 
-<p>Welcome to "You Sunk My Battleship!", Code Institute Project Portfolio 3: Python 3 Game of Battleships</p>
-<p>Play the game now: ***LINK***</p>
+<p>You Sunk My Battleshp is a tribute to the popular traditional game of <a href="https://en.wikipedia.org/wiki/Battleship_(game)#:~:text=Battleship%20is%20known%20worldwide%20as,device%20apps%20and%20a%20film">Battleships</a>, the ultimate in simple strategy gaming.</p>
+<p>Battleships can be played with just a paper and pen but it has grown into much more since it's inception during World War I. Now expanded to board games, electronic games and even a film, it is an enduring classic. This version offers a basic version in which the user must try and "sink" the ships on the board by guessing their position in under 8 turns.</p>
+<p>This game is a demonstration of my Python skills as required by Portfolio 3 Assessment as part of the Code Institute Diploma in Full Stack Software Development.</p>
 <br>
+<strong>The deployed game can be found <a href="??">here</a></p></strong>
+<br>
+<p><img width="640px" height=auto src="??" alt="??"></p>
+<br><br>
 
-## Intro
-<p>A [classic game of strategy](https://en.wikipedia.org/wiki/Battleship_(game)#:~:text=Battleship%20is%20known%20worldwide%20as,device%20apps%20and%20a%20film), Battleships can be played with just a paper and pen but it has grown into much more since it's inception during World War !. Now including board games, electronic games and even a film, "You Sunk My Battleship" is a tribute to the game that sparked a million little wars.</p>
+<p>A [classic game of strategy](), Battleships can be played with just a paper and pen but it has grown into much more since it's inception during World War !. Now including board games, electronic games and even a film, "You Sunk My Battleship" is a tribute to the game that sparked a million little wars.</p>
 <br>
 
 ## How to play
@@ -55,7 +59,7 @@
 <br>
 
 ### Code Institute / Heroku
-<p>final testing</p>
+<p>final testing, mostly line lengths</p>
 <br>
 
 ## Deployment
