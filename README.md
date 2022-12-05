@@ -84,6 +84,6 @@
 
 ### Direct Sourcing:
 <ul>
-    <li><a href="https://www.geeksforgeeks.org/python-ascii-art-using-pyfiglet-module/">Python ASCII art using Pyfiglet Module</a> by Ankthon through Geek for Geeks - this appeared to be a straight forward method of inserting ASCII art into my project and there doesn't appear to be justification for changing or complicating it</li>
-    <li><a href="https://www.youtube.com/watch?v=alJH_c9t4zw">Python Battleship with Object Oriented Programming</a> by Knowledge Mavens through Youtube - I was stuck on getting my game to execute and the solution came directly from reviewing this tutorial</li>
+    <li><a href="https://www.geeksforgeeks.org/python-ascii-art-using-pyfiglet-module/">Python ASCII art using Pyfiglet Module</a> by Ankthon through Geek for Geeks - This appeared to be a straight forward method of inserting ASCII art into my project and there doesn't appear to be justification for changing or complicating it.</li>
+    <li><a href="https://www.youtube.com/watch?v=alJH_c9t4zw">Python Battleship with Object Oriented Programming</a> by Knowledge Mavens through Youtube - This tutorial helped resolve two issues I couldn't get past on my own. The first was formatting the board with an f-string. Although all the characters were working, the layout of the board was broken. I'm unsure if the formatting placeholders are actually the optimial approach but they were the working one at the time of submission. Secondly, after putting together the elements of the game, I couldn't get it to run. After rechecking the definitions and functions using print statements to the console, I reviewed this solution and I realised I was missing the main function to run the script.</li>
 <ul>

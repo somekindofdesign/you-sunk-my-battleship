@@ -8,20 +8,6 @@ import pyfiglet
 
 player_input = ""
 
-# Intro to the game, asks the user if they wish to play
-
-while True:
-    player_input = input(
-        "Do you want to play a game of battleships with me? Type yes or no: ")
-
-    if player_input.lower() == "yes":
-        print("Great! I'll set up the boards...")
-        break
-    elif player_input.lower() == "no":
-        print("Oh well. Mayber later!")
-        break
-    else:
-        print("Type yes or no, please!")
 
 # Source: https://www.geeksforgeeks.org/python-ascii-art-using-pyfiglet-module/
 battle_cry = pyfiglet.figlet_format("Let's battle!", font="banner3-D")
@@ -56,7 +42,8 @@ class BattleshipBoard:
         xaxis_number = 1
         for xaxis in self.board:
 
-            # uses % formatting placeholders to create the grid layout
+            # Uses % formatting placeholders to create the grid layout
+            # Source: https://www.youtube.com/watch?v=alJH_c9t4zw
             print(" %d ¦ %s ¦ " % (xaxis_number, " ¦ ".join(xaxis)))
             xaxis_number += 1
 
@@ -159,7 +146,19 @@ def play_battleships():
             break
 
 
-# let's play Battleships!
-# Source: https://www.youtube.com/watch?v=alJH_c9t4zw
-if __name__ == '__main__':
-    play_battleships()
+# Intro to the game, asks the user if they wish to play
+while True:
+    player_input = input(
+        "Do you want to play a game of battleships with me? Type yes or no: ")
+
+    if player_input.lower() == "yes":
+        print("Great! I'll set up the boards...")
+        # let's play Battleships!
+        # Source: https://www.youtube.com/watch?v=alJH_c9t4zw
+        if __name__ == '__main__':
+            play_battleships()
+    elif player_input.lower() == "no":
+        print("Oh well. Mayber later!")
+        break
+    else:
+        print("Type yes or no, please!")
