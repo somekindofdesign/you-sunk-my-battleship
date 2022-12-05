@@ -14,7 +14,13 @@
 
 <p>Players are limited to 8 torpedoes (or turns) in which to try and destroy all the battleships and win teh game.</p>
 
-<p>If they are successful, they will be rewarded with a surprise display. If they run out of torpedoes, they will be prompted to try again in a new game.</p>
+<p>If they are successful, they will be rewarded with a surprise ASCII display. If they run out of torpedoes, they will be prompted to try again in a new game.</p>
+<br>
+
+## Wireframing & Planning
+<p>Before beginning to code I used <a href="https://lucid.app/documents#/dashboard">Lucid</a> online chart builder to map out the game and how I wanted to approach it. It helped to work through the steps I needed to take to make the game make sense to the player and what tasks the code should execute.</p>
+<br>
+<p><img width="1280px" height=auto src="img/python_battleships_flow.png" alt="battleships game play plan using lucid chart"></p>
 <br>
 
 ## Features
