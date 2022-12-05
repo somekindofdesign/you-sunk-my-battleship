@@ -148,7 +148,8 @@ def play_battleships():
             if play_again == "yes":
                 play_battleships()
             else:
-                break
+                # Source: https://www.askpython.com/python/examples/exit-a-python-program
+                quit()
 
 
 # Intro to the game, asks the user if they wish to play
