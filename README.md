@@ -48,15 +48,15 @@
 
 ## Testing
 ### PEP8
-<p>PEP8 is the indistry standard that provides guidelines for styling Python code. It helps to keep programmes written in Python legible and maintainable. This project was validated using PEP8 for Python 3.</p>
+<p>PEP8 is the industry standard that provides guidelines for styling Python code. It helps to keep programmes written in Python legible and maintainable. This project was validated using PEP8 for Python 3.</p>
 <br>
 
 ### Gitpod
-<p>in app flagging</p>
+<p>Using Gitpod as my worksapce provided additional support when building this game. It flags errors and potential areas to improve as the user writes the code. This was particularly useful for ensuring indentation and line length were up to PEP8 standard as the project developed.</p>
 <br>
 
 ### Online PEP8 checkers
-<p>old python, flagged errors that are not relevant any more</p>
+<p>In addition to Gitpod, I used several online tools such as <a href="https://extendsclass.com/python-tester.html">Extends Class</a> to back up my validation. However, a couple of them were dated and checking against older Python versions. This initially caused some confusion as they flagged code that was currently correct, such as the use of f-strings. Once I realised my mistake a rechecked using the appropriate version and found no significant errors.</p>
 <br>
 
 ### Code Institute / Heroku
@@ -85,5 +85,5 @@
 ### Direct Sourcing:
 <ul>
     <li><a href="https://www.geeksforgeeks.org/python-ascii-art-using-pyfiglet-module/">Python ASCII art using Pyfiglet Module</a> by Ankthon through Geek for Geeks - This appeared to be a straight forward method of inserting ASCII art into my project and there doesn't appear to be justification for changing or complicating it.</li>
-    <li><a href="https://www.youtube.com/watch?v=alJH_c9t4zw">Python Battleship with Object Oriented Programming</a> by Knowledge Mavens through Youtube - This tutorial helped resolve two issues I couldn't get past on my own. The first was formatting the board with an f-string. Although all the characters were working, the layout of the board was broken. I'm unsure if the formatting placeholders are actually the optimial approach but they were the working one at the time of submission. Secondly, after putting together the elements of the game, I couldn't get it to run. After rechecking the definitions and functions using print statements to the console, I reviewed this solution and I realised I was missing the main function to run the script.</li>
+    <li><a href="https://www.youtube.com/watch?v=alJH_c9t4zw">Python Battleship with Object Oriented Programming</a> by Knowledge Mavens through Youtube - This tutorial helped resolve two issues I couldn't get past on my own. The first was formatting the board with an f-string. Although all the characters were working, the layout of the board was broken. I'm unsure if the formatting placeholders are actually the optimal approach but they were the working one at the time of submission. Secondly, after putting together the elements of the game, I couldn't get it to run. After rechecking the definitions and functions using print statements to the console, I reviewed this solution and I realised I was missing the main function to run the script.</li>
 <ul>
