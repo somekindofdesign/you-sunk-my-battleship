@@ -53,8 +53,8 @@
 <br>
 
 ## Testing
-### PEP8
-<p>PEP8 is the industry standard that provides guidelines for styling Python code. It helps to keep programmes written in Python legible and maintainable. This project was validated using PEP8 for Python 3.</p>
+<p>This project was validated using PEP8 for Python 3. PEP8 is the industry standard that provides guidelines for styling Python code. It helps to keep programmes written in Python legible and maintainable.</p>
+<p>It should be noted that as the ships on the boards are raondomly generated, it is difficult to test real game play of a winning game, especially with real users.</p>
 <br>
 
 ### Gitpod
@@ -64,6 +64,9 @@
 ### Online PEP8 checkers
 <p>In addition to Gitpod, I used several online tools such as <a href="https://extendsclass.com/python-tester.html">Extends Class</a> to back up my validation. However, a couple of them were dated and checking against older Python versions. This initially caused some confusion as they flagged code that was currently correct, such as the use of f-strings. Once I realised my mistake a rechecked using the appropriate version and found no significant errors.</p>
 <br>
+
+### UAT
+<p>The game was tested in person with two users using a different device for each user. Without access to Apple devices, both used devices running Windows 10 using the Gitpod terminal. Users were encouraged to enter incorrect data. There were no issues found with the game play or how it was executed.</p>
 
 ### Code Institute / Heroku
 <p>final testing, mostly line lengths</p>
