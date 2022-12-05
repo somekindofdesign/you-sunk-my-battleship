@@ -142,13 +142,12 @@ def play_battleships():
 
         if torpedoes == 0:
             print("You ran out of torpedoes and lost the battle.\n")
-            # BattleshipBoard.generate_board(moves_board)
-            
             play_again = str(input("\nDo you want to battle again?: "))
             if play_again == "yes":
                 play_battleships()
             else:
                 # Source: https://www.askpython.com/python/examples/exit-a-python-program
+                print("You're a sore loser? Ok then, goodbye!")
                 quit()
 
 
