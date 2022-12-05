@@ -2,7 +2,10 @@
 This is a battleship style game made using Python 3.0.
 """
 
+# Import random module
 import random
+
+# Import pyfiglet module
 import pyfiglet
 
 
@@ -10,7 +13,7 @@ player_input = ""
 
 
 # Source: https://www.geeksforgeeks.org/python-ascii-art-using-pyfiglet-module/
-battle_cry = pyfiglet.figlet_format("Let's battle!", font="banner3-D")
+battle_cry = pyfiglet.figlet_format("Let's battle!", font="alligator2")
 print("")
 print(battle_cry)
 
@@ -135,6 +138,10 @@ def play_battleships():
         # checks if all ships have been hit or torpedoes ran out
         if Battleships.sunk_ships_score(moves_board) == 5:
             print("You sunk all my battleships!\n")
+            # Source: https://www.geeksforgeeks.org/python-ascii-art-using-pyfiglet-module/
+            battle_cry = pyfiglet.figlet_format("You won!", font="banner3-D")
+            print("")
+            print(battle_cry)
             break
         else:
             torpedoes -= 1
