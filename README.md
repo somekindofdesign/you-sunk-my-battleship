@@ -38,12 +38,12 @@
 ## Data Model
 <p>For this game, two classes were used; one for the board and one for the ships. Using two classes for main elements of the game should allow for additional features to be added later without disrupting the way the game currently runs.</p>
 
-### Boards
-<p>A class is used to generate the board during the gameplay. As the </p>
+### BattleshipBoard
+<p>This class is used to generate the board during the gameplay. As the player adds their guesses to the board it's used up to 8 times in one game.</p>
 <br>
 
-### Ships
-<p>??</p>
+### Battleships
+<p>This class handles the position of the ships on the board and the players entries including validation and checking if the turn was a "hit". Similar to the BattleshipBoard class, Battleship is used at least 8 times, more if the user repeatedly enters an incorrect value when guessing.</p>
 <br>
 
 ## Testing
