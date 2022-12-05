@@ -70,7 +70,7 @@
 <br>
 
 ## Deployment
-<p>This project was deployed using <a href="https://dashboard.heroku.com/apps">Heroku</a> Cloud Platform. To replicate the deployment, please follow the below steps.</p>
+<p>This project was deployed using <a href="https://dashboard.heroku.com/apps">Heroku</a> Cloud Platform. It uses the Code Institute Python template repo to assist with successful deployment, as per project recommendations. To replicate the deployment, please follow the below steps.</p>
 
 ### Steps for Deployment
 <ul>

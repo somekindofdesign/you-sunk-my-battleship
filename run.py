@@ -142,8 +142,13 @@ def play_battleships():
 
         if torpedoes == 0:
             print("You ran out of torpedoes and lost the battle.\n")
-            BattleshipBoard.generate_board(moves_board)
-            break
+            # BattleshipBoard.generate_board(moves_board)
+            
+            play_again = str(input("\nDo you want to battle again?: "))
+            if play_again == "yes":
+                play_battleships()
+            else:
+                break
 
 
 # Intro to the game, asks the user if they wish to play
