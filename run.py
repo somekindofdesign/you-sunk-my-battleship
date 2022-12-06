@@ -9,9 +9,6 @@ import random
 import pyfiglet
 
 
-# player_input = ""
-
-
 # Source: https://www.geeksforgeeks.org/python-ascii-art-using-pyfiglet-module/
 battle_cry = pyfiglet.figlet_format("Let's battle!", font="alligator2")
 print("")
@@ -152,7 +149,7 @@ def play_battleships():
             if play_again == "yes":
                 play_battleships()
             else:
-                # Source: 
+                # Source:
                 # https://www.askpython.com/python/examples/exit-a-python-program
                 print("You're a sore loser? Ok then, goodbye!")
                 quit()

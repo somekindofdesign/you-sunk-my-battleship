@@ -18,7 +18,7 @@
 <br>
 
 ## Wireframing & Planning
-<p>Before beginning to code I used <a href="https://lucid.app/documents#/dashboard">Lucid</a> online chart builder to map out the game and how I wanted to approach it. It helped to work through the steps I needed to take to make the game make sense to the player and what tasks the code should execute.</p>
+<p>Before development began, <a href="https://lucid.app/documents#/dashboard">Lucid</a>, an online chart builder, was used to map out the game and how best to approach it. It helped to work through the steps needed to make the game make sense to the player and what tasks the code should execute.</p>
 <br>
 <p><img width="1280px" height=auto src="img/python_battleships_flow.png" alt="battleships game play plan using lucid chart"></p>
 <br>
@@ -54,26 +54,26 @@
 
 ## Testing
 <p>This project was validated using PEP8 for Python 3. PEP8 is the industry standard that provides guidelines for styling Python code. It helps to keep programmes written in Python legible and maintainable.</p>
-<p>It should be noted that as the ships on the boards are raondomly generated, it is difficult to test real game play of a winning game, especially with real users.</p>
+<p>It should be noted that as the ships on the boards are randomly generated, it is difficult to test real game play of a winning game, especially with real users.</p>
 <br>
 
 ### Gitpod
-<p>Using Gitpod as my worksapce provided additional support when building this game. It flags errors and potential areas to improve as the user writes the code. This was particularly useful for ensuring indentation and line length were up to PEP8 standard as the project developed.</p>
+<p>Using Gitpod as my workspace provided additional support when building this game. It flags errors and potential areas to improve as the user writes the code. This was particularly useful for ensuring indentation and line length were up to PEP8 standard as the project developed.</p>
 <br>
 
 ### Online PEP8 checkers
-<p>In addition to Gitpod, I used several online tools such as <a href="https://extendsclass.com/python-tester.html">Extends Class</a> to back up my validation. However, a couple of them were dated and checking against older Python versions. This initially caused some confusion as they flagged code that was currently correct, such as the use of f-strings. Once I realised my mistake a rechecked using the appropriate version and found no significant errors.</p>
+<p>In addition to Gitpod, several online tools such as <a href="https://extendsclass.com/python-tester.html">Extends Class</a> were used to back up Gitpod validation during development. However, some of them were dated and checking against older Python versions. This initially caused some confusion as they flagged code that was currently correct, such as the use of f-strings. Once the error was realised, the project was rechecked using an appropriate version and found no significant errors.</p>
 <br>
 
 ### UAT
 <p>The game was tested in person with two users using a different device for each user. Without access to Apple devices, both used devices running Windows 10 using the Gitpod terminal. Users were encouraged to enter incorrect data. There were no issues found with the game play or how it was executed.</p>
 
-### Code Institute / Heroku
-<p>final testing, mostly line lengths</p>
+### Code Institute Python Linter
+<p>The Code Institute Python Linter was used as the final phase of testing before deployment. It showed some line lengths that could be improved and new variable or split lines were used to shorten them. !!!The project was tested again after deployment...!!!</p>
 <br>
 
 ## Deployment
-<p>This project was deployed using <a href="https://dashboard.heroku.com/apps">Heroku</a> Cloud Platform. It uses the Code Institute Python template repo to assist with successful deployment, as per project recommendations. To replicate the deployment, please follow the below steps.</p>
+<p>This project was deployed using <a href="https://dashboard.heroku.com/apps">Heroku</a> Cloud Platform. It uses the <a href="https://github.com/Code-Institute-Org/python-essentials-template">Code Institute Python template repo</a> to assist with successful deployment, as per project recommendations. To replicate the deployment, please follow the below steps.</p>
 
 ### Steps for Deployment
 <ul>
@@ -88,13 +88,13 @@
     <li><a href="https://www.youtube.com/watch?v=alJH_c9t4zw">Python Battleship with Object Oriented Programming</a> by Knowledge Mavens through Youtube</li>
     <li><a href="https://copyassignment.com/battleship-game-code-in-python/">Battleship Game Code in Python</a> by Pranjav Dev through Copy Assignment</li>
     <li><a href="https://bigmonty12.github.io/battleship">Python for Beginners: Battleship2</a> by Austin Montgomery through BigMonty1.github.io</li>
-    <li><a href="http://www.figlet.org/examples.html">FIGlet</a> Plig.net through Figlet.org</li>
+    <li><a href="http://www.figlet.org/examples.html">FIGlet</a> by Plig.net through Figlet.org</li>
 </ul>
 <br>
 
 ### Direct Sourcing:
 <ul>
-    <li><a href="https://www.geeksforgeeks.org/python-ascii-art-using-pyfiglet-module/">Python ASCII art using Pyfiglet Module</a> by Ankthon through Geek for Geeks - This appeared to be a straight forward method of inserting ASCII art into my project and there doesn't appear to be justification for changing or complicating it.</li>
-    <li><a href="https://www.youtube.com/watch?v=alJH_c9t4zw">Python Battleship with Object Oriented Programming</a> by Knowledge Mavens through Youtube - This tutorial helped resolve two issues I couldn't get past on my own. The first was formatting the board with an f-string. Although all the characters were working, the layout of the board was broken. I'm unsure if the formatting placeholders are actually the optimal approach but they were the working one at the time of submission. Secondly, after putting together the elements of the game, I couldn't get it to run. After rechecking the definitions and functions using print statements to the console, I reviewed this solution and I realised I was missing the main function to run the script.</li>
-    <li><a href="https://www.askpython.com/python/examples/exit-a-python-program">Exit a Python Programm in 3 Easy Ways</a> by AskPython.com - when adding a prompt to play again after losing, I initially used break but this didn't acknowledge the player saying no to a new game. In looking for an alternative method to employ, I found this resource. I chose to use "quit" as it is built in and doesn't require importing anything else to the game (compared to sys.exit). It is my understanding that this should only be used in scenarios such as student projects, where the code is not part of a larger, commercial project.</li>
+    <li><a href="https://www.geeksforgeeks.org/python-ascii-art-using-pyfiglet-module/">Python ASCII art using Pyfiglet Module</a> by Ankthon through Geek for Geeks - This is a straight forward method of inserting ASCII art into the project and there didn't appear to be justification for changing or complicating it.</li>
+    <li><a href="https://www.youtube.com/watch?v=alJH_c9t4zw">Python Battleship with Object Oriented Programming</a> by Knowledge Mavens through Youtube - This tutorial helped resolve two issues I couldn't get past on my own. The first was formatting the board with an f-string. Although all the characters were working, the layout of the board was broken. I'm unsure if formatting placeholders are actually the optimal approach but they were the best one at the time of submission. Secondly, after putting together the elements of the game, it would not run. After unusuccessfully rechecking the definitions and functions by printing to the terminal, reviewing this solution demonstrated that the main function to run the script was missing.</li>
+    <li><a href="https://www.askpython.com/python/examples/exit-a-python-program">Exit a Python Programm in 3 Easy Ways</a> by AskPython.com - a break was used to stop game play after offering a rematch but this didn't acknowledge the player saying no to the new game. In looking for an alternative method to employ, this resource was discovered. The "quit" function was used as it is built in and doesn't require importing anything else to the game (compared to sys.exit). It is my understanding that this should only be used in scenarios such as student projects, where the code is not part of a larger, commercial project.</li>
 <ul>
