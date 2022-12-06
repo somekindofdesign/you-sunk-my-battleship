@@ -167,7 +167,7 @@ while True:
         if __name__ == '__main__':
             play_battleships()
     elif player_input.lower() == "no":
-        print("Oh well. Mayber later!")
+        print("Oh well. Maybe later!")
         break
     else:
         print("Type yes or no, please!")
