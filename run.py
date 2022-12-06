@@ -136,7 +136,8 @@ def play_battleships():
         # checks if all ships have been hit or torpedoes ran out
         if Battleships.sunk_ships_score(moves_board) == 5:
             print("You sunk all my battleships!\n")
-            # Source: https://www.geeksforgeeks.org/python-ascii-art-using-pyfiglet-module/
+            # Source:
+            # https://www.geeksforgeeks.org/python-ascii-art-using-pyfiglet-module/
             battle_cry = pyfiglet.figlet_format("You won!", font="banner3-D")
             print("")
             print(battle_cry)
@@ -151,7 +152,8 @@ def play_battleships():
             if play_again == "yes":
                 play_battleships()
             else:
-                # Source: https://www.askpython.com/python/examples/exit-a-python-program
+                # Source: 
+                # https://www.askpython.com/python/examples/exit-a-python-program
                 print("You're a sore loser? Ok then, goodbye!")
                 quit()
 
