@@ -9,7 +9,7 @@ import random
 import pyfiglet
 
 
-player_input = ""
+# player_input = ""
 
 
 # Source: https://www.geeksforgeeks.org/python-ascii-art-using-pyfiglet-module/
@@ -23,19 +23,14 @@ class BattleshipBoard:
     Class to build grid and generate boards.
     """
 
+    letters_by_numbers = {"A": 0, "B": 1, "C": 2,
+                          "D": 3, "E": 4, "F": 5, "G": 6, "H": 7}
+
     def __init__(self, board):
         """
         Initialises the class.
         """
         self.board = board
-
-    def board_letters_by_numbers():
-        """
-        Defines function to reference letter and number grid.
-        """
-        letters_by_numbers = {"A": 0, "B": 1, "C": 2,
-                              "D": 3, "E": 4, "F": 5, "G": 6, "H": 7}
-        return letters_by_numbers
 
     def generate_board(self):
         """
@@ -87,8 +82,8 @@ class Battleships:
             while y_yaxis not in "ABCDE":
                 print("That's not a letter from A to E.")
                 y_yaxis = input("Try again: ").upper()
-            return int(x_xaxis) - 1, BattleshipBoard.board_letters_by_numbers(
-            )[y_yaxis]
+            return (
+                int(x_xaxis) - 1, BattleshipBoard.letters_by_numbers[y_yaxis])
         except ValueError:
             print("Sorry, I don't recognise that entry - please try again.")
         return self.player_move()
@@ -123,7 +118,10 @@ def play_battleships():
         print(" \n")
 
         # checks for repeat moves
-        while moves_board.board[player_x_xaxis][player_y_yaxis] == "-" or moves_board.board[player_x_xaxis][player_y_yaxis] == "X":
+        is_hit = moves_board.board[player_x_xaxis][player_y_yaxis] == "X"
+        is_miss = moves_board.board[player_x_xaxis][player_y_yaxis] == "-"
+
+        while is_hit or is_miss:
             print("A torpedo already landed here - try another move.")
             player_x_xaxis, player_y_yaxis = Battleships.player_move(object)
 
