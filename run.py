@@ -156,7 +156,7 @@ def play_battleships():
 # Intro to the game, asks the user if they wish to play
 while True:
     player_input = input(
-        "Do you want to play a game of battleships with me? Type yes or no: /n")
+        "Do you want to play a game of battleships with me? Type yes or no: ")
 
     if player_input.lower() == "yes":
         print("Great! I'll set up the boards...")
