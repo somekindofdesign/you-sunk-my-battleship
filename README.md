@@ -4,9 +4,9 @@
 <p>Battleships can be played with just a paper and pen but it has grown into much more since it's inception during World War I. Now expanded to board games, electronic games and even a film, it is an enduring classic. This version offers basic game play in which the player must try and "sink" the ships on the board by guessing their position with a limited number of turns.</p>
 <p>This game is a demonstration of my Python skills as required by Portfolio 3 Assessment as part of the Code Institute Diploma in Full Stack Software Development.</p>
 <br>
-<strong>The deployed game can be found <a href="??">here</a></p></strong>
+<strong>The deployed game can be found <a href="https://skod-you-sunk-my-battleship.herokuapp.com/">here</a></p></strong>
 <br>
-<p><img width="640px" height=auto src="??" alt="??"></p>
+<p><img width="640px" height=auto src="img/you-sunk-my-battleship.PNG" alt="screenshot of the game running as a Heroku app"></p>
 <br>
 
 ## How to play
@@ -18,7 +18,7 @@
 <br>
 
 ## Wireframing & Planning
-<p>Before development began, <a href="https://lucid.app/documents#/dashboard">Lucid</a>, an online chart builder, was used to map out the game and how best to approach it. It helped to work through the steps needed to make the game make sense to the player and what tasks the code should execute.</p>
+<p>Before development began, online chart builder <a href="https://lucid.app/documents#/dashboard">Lucid</a> was used to map out the game and how best to approach it. It helped to work through the steps needed to make the game make sense to the player and what tasks the code should execute.</p>
 <br>
 <p><img width="1280px" height=auto src="img/python_battleships_flow.png" alt="battleships game play plan using lucid chart"></p>
 <br>
@@ -76,16 +76,28 @@
     <li><strong>Gitpod:</strong> Using Gitpod provided additional support when building this game. It flags errors and potential areas to improve as the code is written. This was particularly useful for ensuring indentation and line length were to PEP8 standard as the overall project developed.</li>
     <li><strong>Online PEP8 checkers:</strong> In addition to Gitpod, several online tools such as <a href="https://extendsclass.com/python-tester.html">Extends Class</a> were used to back up Gitpod validation during development. However, some of them were checking against older Python versions. This initially caused some confusion as they flagged code that was currently correct, such as the use of f-strings. Once the error was realised, the project was rechecked using an appropriate version and found no significant errors.</li>
     <li><strong>UAT: </strong>The game was tested in person with two users using a different device for each user. Without access to Apple devices, both used devices running Windows 10 using the Gitpod terminal. Users were encouraged to enter incorrect data. There were no issues found with the game play or how it was executed.</li>
-    <li><strong>Code Institute Python Linter:</strong> The Code Institute Python Linter was used as the final phase of testing before deployment. It showed some line lengths that could be improved and new variable or split lines were used to shorten them. !!!The project was tested again after deployment...!!!</li>
+    <li><strong>Code Institute Python Linter:</strong> The Code Institute Python Linter was used as the final phase of testing before deployment. It showed some line lengths that could be improved and new variable or split lines were used to shorten them. The project was tested again using the CI Linter after deployment and did not have any errors.</li>
 </ul>
 <br>
 
 ## Deployment
-<p>This project was deployed using <a href="https://dashboard.heroku.com/apps">Heroku</a> Cloud Platform. It uses the <a href="https://github.com/Code-Institute-Org/python-essentials-template">Code Institute Python template repo</a> to assist with successful deployment, as per project recommendations. This included tasks that are unique to this template that prepared the project for deployment to Heroku, such as adding \n to the end of input strings. To replicate the deployment, please follow the below steps.</p>
+<p>This project was deployed using <a href="https://dashboard.heroku.com/apps">Heroku</a> Cloud Platform. It uses the <a href="https://github.com/Code-Institute-Org/python-essentials-template">Code Institute Python template repo</a> to assist with successful deployment, as per project recommendations. This included tasks that are unique to this template that prepared the project for deployment to Heroku, such as adding \n to the end of input strings (Please note that not all were required and were removed during after deployment testing).</p>
+
+<p>To replicate the deployment, please follow the below steps.</p>
 
 ### Steps for Deployment
 <ul>
-    <li>??</li>
+    <li>Log in to yoour Heroku account</li>
+    <li>In the top right corner, click "New" then "New App"</li>
+    <li>Name the app with a unique name</li>
+    <li>Ensure the location is set to the relevant one</li>
+    <li>Click create</li>
+    <li>Go to settings</li>
+    <li>Add relevant ConfigVars and Buildpacks; for this app it includes PORT: 8000 and python & node.js</li>
+    <li>Go to deploy and choose a deployment method; for this app it is GitHub</li>
+    <li>When using GitHub, type the name in the text field to find the repo</li>
+    <li>Check the branch is correct</li>
+    <li>Click connect and wait until "View app" button appears</li>
 </ul>
 <br>
 
