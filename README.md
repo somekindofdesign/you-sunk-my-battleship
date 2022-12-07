@@ -1,7 +1,7 @@
 # Welcome to You Sunk My Battleship
 
 <p>You Sunk My Battleshp is a tribute to the popular traditional game of <a href="https://en.wikipedia.org/wiki/Battleship_(game)#:~:text=Battleship%20is%20known%20worldwide%20as,device%20apps%20and%20a%20film">Battleships</a>, the ultimate in simple strategy gaming.</p>
-<p>Battleships can be played with just a paper and pen but it has grown into much more since it's inception during World War I. Now expanded to board games, electronic games and even a film, it is an enduring classic. This version offers a basic version in which the player must try and "sink" the ships on the board by guessing their position with a limited number of turns.</p>
+<p>Battleships can be played with just a paper and pen but it has grown into much more since it's inception during World War I. Now expanded to board games, electronic games and even a film, it is an enduring classic. This version offers basic game play in which the player must try and "sink" the ships on the board by guessing their position with a limited number of turns.</p>
 <p>This game is a demonstration of my Python skills as required by Portfolio 3 Assessment as part of the Code Institute Diploma in Full Stack Software Development.</p>
 <br>
 <strong>The deployed game can be found <a href="??">here</a></p></strong>
@@ -12,9 +12,9 @@
 ## How to play
 <p>Battleships are placed on a board and hidden from the player. They must guess where on the board they think the battelship is placed. First, typing a number corresponding to the x axis then hitting enter on their keyboard. This is followed by a letter corresponding to the y axis and the enter key. If the guess is correct, they have hit and sunk a battleship!</p>
 
-<p>Players are limited to 8 torpedoes (or turns) in which to try and destroy all the battleships and win teh game.</p>
+<p>Players are limited to 8 torpedoes (or turns) in which to try and destroy all the battleships and win the game.</p>
 
-<p>If they are successful, they will be rewarded with a surprise ASCII display. If they run out of torpedoes, they will be prompted to try again in a new game.</p>
+<p>If they are successful, they will be rewarded with a ASCII display. If they run out of torpedoes, they will be prompted to try again in a new game.</p>
 <br>
 
 ## Wireframing & Planning
@@ -60,14 +60,15 @@
 ### Bugs
 <p>Fixed</p>
 <ul>
-<li>Although all the characters were working, the layout of the board was broken when using an f-string to format it. Using formatting placeholders may not actually be the optimal approach but were the best resolution at the time of submission. This should be reviewed in future iterations.</li>
-<li>After putting together the elements of the game, it would not run. After unusuccessfully rechecking the definitions and functions by printing to the terminal, reviewing this solution demonstrated that the main function to run the script was missing.</li>
+<li>Formatting: Although all the characters were working, the layout of the board was broken when using an f-string to format it. Using formatting placeholders may not actually be the optimal approach but were the best resolution at the time of submission. This should be reviewed in future iterations.</li>
+<li>Run game: After putting together the elements of the game, it would not run. Definitions and functions were checked by printing to the terminal but not uncover any issues. Reviewing this solution demonstrated that the main function to run the script was missing.</li>
+<li>Line 118: My original approach compares the two possibilities of a placement on the board being occupied by a hit (X) or a miss (-) within a while loop. This caused a line length error so I took another look and added variables to declare what a hit or miss is. Unfortuantely this broke the loop and the user ended up being asked to try again over and over, even of their guess was valid. Although the original solution was put back in place and then broken up using parenthesis, this should be reviwed in the next iteration of this game.</li>
 </ul>
 <br>
 
 <p>Unfixed</p>
 <ul>
-<li>Line 118: My original approach compared the two possibilities of a space on the board being occupied by a hit (X) or a miss (-) within a while loop. This threw up a line length error so I took another look and added variables to declare what a hit or miss could be. Unfortuantely this broke the loop and the user ended up being asked to try again over and over, even of their guess was valid. !!!I removed the variables...!!!</li>
+<li>There are no unfixed bugs.</li>
 </ul>
 <br>
 

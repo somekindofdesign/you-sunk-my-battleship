@@ -133,9 +133,9 @@ def play_battleships():
             print("You sunk all my battleships!\n")
             # Source:
             # https://www.geeksforgeeks.org/python-ascii-art-using-pyfiglet-module/
-            battle_cry = pyfiglet.figlet_format("You won!", font="banner3-D")
+            winners_cry = pyfiglet.figlet_format("You won!", font="banner3-D")
             print("")
-            print(battle_cry)
+            print(winners_cry)
             break
         else:
             torpedoes -= 1
