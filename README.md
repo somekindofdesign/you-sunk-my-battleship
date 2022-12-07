@@ -57,6 +57,20 @@
 <p>It should be noted that as the ships on the boards are randomly generated, it is difficult to test real game play of a winning game, especially with real users.</p>
 <br>
 
+### Bugs
+<p>Fixed</p>
+<ul>
+<li>Although all the characters were working, the layout of the board was broken when using an f-string to format it. Using formatting placeholders may not actually be the optimal approach but were the best resolution at the time of submission. This should be reviewed in future iterations.</li>
+<li>After putting together the elements of the game, it would not run. After unusuccessfully rechecking the definitions and functions by printing to the terminal, reviewing this solution demonstrated that the main function to run the script was missing.</li>
+</ul>
+<br>
+
+<p>Unfixed</p>
+<ul>
+<li>Line 118: My original approach compared the two possibilities of a space on the board being occupied by a hit (X) or a miss (-) within a while loop. This threw up a line length error so I took another look and added variables to declare what a hit or miss could be. Unfortuantely this broke the loop and the user ended up being asked to try again over and over, even of their guess was valid. !!!I removed the variables...!!!</li>
+</ul>
+<br>
+
 ### Gitpod
 <p>Using Gitpod as my workspace provided additional support when building this game. It flags errors and potential areas to improve as the user writes the code. This was particularly useful for ensuring indentation and line length were up to PEP8 standard as the project developed.</p>
 <br>
@@ -95,6 +109,6 @@
 ### Direct Sourcing:
 <ul>
     <li><a href="https://www.geeksforgeeks.org/python-ascii-art-using-pyfiglet-module/">Python ASCII art using Pyfiglet Module</a> by Ankthon through Geek for Geeks - This is a straight forward method of inserting ASCII art into the project and there didn't appear to be justification for changing or complicating it.</li>
-    <li><a href="https://www.youtube.com/watch?v=alJH_c9t4zw">Python Battleship with Object Oriented Programming</a> by Knowledge Mavens through Youtube - This tutorial helped resolve two issues I couldn't get past on my own. The first was formatting the board with an f-string. Although all the characters were working, the layout of the board was broken. I'm unsure if formatting placeholders are actually the optimal approach but they were the best one at the time of submission. Secondly, after putting together the elements of the game, it would not run. After unusuccessfully rechecking the definitions and functions by printing to the terminal, reviewing this solution demonstrated that the main function to run the script was missing.</li>
+    <li><a href="https://www.youtube.com/watch?v=alJH_c9t4zw">Python Battleship with Object Oriented Programming</a> by Knowledge Mavens through Youtube - This tutorial helped resolve two bugs referenced in the Bugs section of this document; the f-string board bug and the gameplay bug</li>
     <li><a href="https://www.askpython.com/python/examples/exit-a-python-program">Exit a Python Programm in 3 Easy Ways</a> by AskPython.com - a break was used to stop game play after offering a rematch but this didn't acknowledge the player saying no to the new game. In looking for an alternative method to employ, this resource was discovered. The "quit" function was used as it is built in and doesn't require importing anything else to the game (compared to sys.exit). It is my understanding that this should only be used in scenarios such as student projects, where the code is not part of a larger, commercial project.</li>
 <ul>
