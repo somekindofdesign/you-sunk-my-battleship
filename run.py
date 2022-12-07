@@ -70,15 +70,15 @@ class Battleships:
         """
         print("\n")
         try:
-            x_xaxis = input("What number do you want to try?: ")
+            x_xaxis = input("What number do you want to try?: \n")
             while x_xaxis not in '12345':
                 print("That's not a number from 1 to 5.")
-                x_xaxis = input("Try again: ")
+                x_xaxis = input("Try again: /n")
 
-            y_yaxis = input("What letter do you want to try?: ").upper()
+            y_yaxis = input("What letter do you want to try?: /n").upper()
             while y_yaxis not in "ABCDE":
                 print("That's not a letter from A to E.")
-                y_yaxis = input("Try again: ").upper()
+                y_yaxis = input("Try again: /n").upper()
             return (
                 int(x_xaxis) - 1, BattleshipBoard.letters_by_numbers[y_yaxis])
         except ValueError:
@@ -143,7 +143,7 @@ def play_battleships():
 
         if torpedoes == 0:
             print("You ran out of torpedoes and lost the battle.\n")
-            play_again = str(input("\nDo you want to battle again?: "))
+            play_again = str(input("\nDo you want to battle again?: \n"))
             if play_again == "yes":
                 play_battleships()
             else:
@@ -156,7 +156,7 @@ def play_battleships():
 # Intro to the game, asks the user if they wish to play
 while True:
     player_input = input(
-        "Do you want to play a game of battleships with me? Type yes or no: ")
+        "Do you want to play a game of battleships with me? Type yes or no: /n")
 
     if player_input.lower() == "yes":
         print("Great! I'll set up the boards...")
