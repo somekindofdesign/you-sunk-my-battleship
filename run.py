@@ -75,10 +75,10 @@ class Battleships:
                 print("That's not a number from 1 to 5.")
                 x_xaxis = input("Try again: /n")
 
-            y_yaxis = input("What letter do you want to try?: /n").upper()
+            y_yaxis = input("What letter do you want to try?: ").upper()
             while y_yaxis not in "ABCDE":
                 print("That's not a letter from A to E.")
-                y_yaxis = input("Try again: /n").upper()
+                y_yaxis = input("Try again: ").upper()
             return (
                 int(x_xaxis) - 1, BattleshipBoard.letters_by_numbers[y_yaxis])
         except ValueError:
