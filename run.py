@@ -115,10 +115,7 @@ def play_battleships():
         print(" \n")
 
         # checks for repeat moves
-        is_hit = moves_board.board[player_x_xaxis][player_y_yaxis] == "X"
-        is_miss = moves_board.board[player_x_xaxis][player_y_yaxis] == "-"
-
-        while is_hit or is_miss:
+        while moves_board.board[player_x_xaxis][player_y_yaxis] == "X" or moves_board.board[player_x_xaxis][player_y_yaxis] == "-":
             print("A torpedo already landed here - try another move.")
             player_x_xaxis, player_y_yaxis = Battleships.player_move(object)
 
