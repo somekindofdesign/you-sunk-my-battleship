@@ -72,12 +72,12 @@ class Battleships:
         try:
             x_xaxis = input("What number do you want to try?: \n")
             while x_xaxis not in '12345':
-                print("That's not a number from 1 to 5.")
+                print("\nThat's not a number from 1 to 5.")
                 x_xaxis = input("Try again: \n")
 
             y_yaxis = input("\nWhat letter do you want to try?: \n").upper()
             while y_yaxis not in "ABCDE":
-                print("That's not a letter from A to E.")
+                print("\nThat's not a letter from a to e .")
                 y_yaxis = input("Try again: ").upper()
             return (
                 int(x_xaxis) - 1, BattleshipBoard.letters_by_numbers[y_yaxis])
@@ -166,7 +166,7 @@ while True:
         if __name__ == '__main__':
             play_battleships()
     elif player_input.lower() == "no":
-        print("Oh well. Maybe later!")
+        print("\nOh well. Maybe later!")
         break
     else:
         print("Type yes or no, please!\n")
