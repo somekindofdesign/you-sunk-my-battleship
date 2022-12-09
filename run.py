@@ -149,6 +149,8 @@ def play_battleships():
                 play_battleships()
             elif play_again.lower() == "no":
                 print("You've been dishonourably discharged. Goodbye!")
+                # Source:
+                # https://www.askpython.com/python/examples/exit-a-python-program
                 quit()
             else:
                 print("\nType yes or no, please!\n")
