@@ -133,7 +133,7 @@ def play_battleships():
             print("You sunk all my battleships!\n")
             # Source:
             # https://www.geeksforgeeks.org/python-ascii-art-using-pyfiglet-module/
-            winners_cry = pyfiglet.figlet_format("You won!", font="banner3-D")
+            winners_cry = pyfiglet.figlet_format("You may have won the battle but you have not won the war!", font="banner3-D")
             print("")
             print(winners_cry)
             break
@@ -143,13 +143,13 @@ def play_battleships():
 
         if torpedoes == 0:
             print("You ran out of torpedoes and lost the battle.\n")
-            play_again = str(input("\nDo you want to battle again?: \n"))
+            play_again = str(input("Want another battle? Type yes or no: \n"))
             if play_again == "yes":
                 play_battleships()
             else:
                 # Source:
                 # https://www.askpython.com/python/examples/exit-a-python-program
-                print("You're a sore loser? Ok then, goodbye!")
+                print("You've been dishonourably discharged, goodbye!")
                 quit()
 
 
