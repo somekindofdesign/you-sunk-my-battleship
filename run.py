@@ -33,7 +33,7 @@ class BattleshipBoard:
         """
         Defines function to layout the battleship board.
         """
-        print("     a   b   c   d   e  ")
+        print("/n     a   b   c   d   e  ")
         xaxis_number = 1
         for xaxis in self.board:
 
@@ -75,7 +75,7 @@ class Battleships:
                 print("That's not a number from 1 to 5.")
                 x_xaxis = input("Try again: /n")
 
-            y_yaxis = input("What letter do you want to try?: \n").upper()
+            y_yaxis = input("\nWhat letter do you want to try?: \n").upper()
             while y_yaxis not in "ABCDE":
                 print("That's not a letter from A to E.")
                 y_yaxis = input("Try again: ").upper()
@@ -147,10 +147,10 @@ def play_battleships():
             if play_again.lower() == "yes":
                 play_battleships()
             elif play_again.lower() == "no":
-                print("You've been dishonourably discharged, goodbye!")
+                print("You've been dishonourably discharged. Goodbye!")
                 quit()
             else:
-                print("Type yes or no, please!")
+                print("\nType yes or no, please!\n")
                 
 
 # Intro to the game, asks the user if they wish to play
@@ -159,7 +159,7 @@ while True:
         "Do you want to play a game of battleships with me? Type yes or no: ")
 
     if player_input.lower() == "yes":
-        print("\nGreat! I'll set up the boards...")
+        print("\nGreat! I'll set up the board...")
         # let's play Battleships!
         # Source: https://www.youtube.com/watch?v=alJH_c9t4zw
         if __name__ == '__main__':
