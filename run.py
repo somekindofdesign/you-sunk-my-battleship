@@ -146,11 +146,12 @@ def play_battleships():
             play_again = str(input("Want another battle? Type yes or no: \n"))
             if play_again == "yes":
                 play_battleships()
-            else:
-                # Source:
-                # https://www.askpython.com/python/examples/exit-a-python-program
+            elif player_input.lower() == "no":
                 print("You've been dishonourably discharged, goodbye!")
                 quit()
+            else:
+                print("Type yes or no, please!")
+                
 
 
 # Intro to the game, asks the user if they wish to play
@@ -159,7 +160,7 @@ while True:
         "Do you want to play a game of battleships with me? Type yes or no: ")
 
     if player_input.lower() == "yes":
-        print("Great! I'll set up the boards...")
+        print("\nGreat! I'll set up the boards...")
         # let's play Battleships!
         # Source: https://www.youtube.com/watch?v=alJH_c9t4zw
         if __name__ == '__main__':
@@ -168,4 +169,4 @@ while True:
         print("Oh well. Maybe later!")
         break
     else:
-        print("Type yes or no, please!")
+        print("Type yes or no, please!\n")
