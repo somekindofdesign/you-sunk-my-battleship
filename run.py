@@ -33,7 +33,7 @@ class BattleshipBoard:
         """
         Defines function to layout the battleship board.
         """
-        print("/n     a   b   c   d   e  ")
+        print("\n     a   b   c   d   e  ")
         xaxis_number = 1
         for xaxis in self.board:
 
@@ -73,7 +73,7 @@ class Battleships:
             x_xaxis = input("What number do you want to try?: \n")
             while x_xaxis not in '12345':
                 print("That's not a number from 1 to 5.")
-                x_xaxis = input("Try again: /n")
+                x_xaxis = input("Try again: \n")
 
             y_yaxis = input("\nWhat letter do you want to try?: \n").upper()
             while y_yaxis not in "ABCDE":
@@ -133,13 +133,14 @@ def play_battleships():
             print("You sunk all my battleships!\n")
             # Source:
             # https://www.geeksforgeeks.org/python-ascii-art-using-pyfiglet-module/
-            winners_cry = pyfiglet.figlet_format("You have won the battle but not the war!", font="banner3-D")
+            winners_cry = pyfiglet.figlet_format(
+                "You've won the battle but not the war!", font="banner3-D")
             print("")
             print(winners_cry)
             break
         else:
             torpedoes -= 1
-            print(f"There are {torpedoes} torpedoes left in your arsenal.\n")
+            print(f"There are {torpedoes} torpedoes left in your arsenal.")
 
         if torpedoes == 0:
             print("You ran out of torpedoes and lost the battle.\n")
@@ -151,12 +152,12 @@ def play_battleships():
                 quit()
             else:
                 print("\nType yes or no, please!\n")
-                
+
 
 # Intro to the game, asks the user if they wish to play
 while True:
     player_input = input(
-        "Do you want to play a game of battleships with me? Type yes or no: ")
+        "Do you want to play battleships with me? Type yes or no: \n")
 
     if player_input.lower() == "yes":
         print("\nGreat! I'll set up the board...")
